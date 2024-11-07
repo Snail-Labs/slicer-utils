@@ -1,11 +1,13 @@
 import json
 import logging
+import os
+
 # import requests
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def merge_dicts_recursive(*dicts):
+def merge_dicts_recursive(*dicts: dict):
     merged = {}
     for dictionary in dicts:
         for key, value in dictionary.items():
@@ -76,7 +78,7 @@ def parse_dict_recursive(sample: dict, orca_dict: dict, new_dict) -> dict:
 def transform_process(
         machine_config_path: str, process_config_path: str, filament_config_path: str
 ) -> None | dict:
-    sample_ = file_to_data("docs/snail-to-orca.json")
+    sample_ = file_to_data(os.path.join("docs", "snail-to-orca.json"))
     main_settings_ = load_orca_configs(
         machine_config_path, process_config_path, filament_config_path
     )
