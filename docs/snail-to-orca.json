@@ -1,0 +1,97 @@
+{
+  "ancestor": {
+    "printer_technology": "printer_technology",
+    "manufacturer_ancestor": "from"
+  },
+  "metadata": {
+    "name": "name",
+    "version": null
+  },
+  "override": {
+    "gcode": {
+      "flavor_gcode": "gcode_flavor",
+      "start_param_gcode": "machine_start_gcode",
+      "end_param_gcode": "machine_end_gcode"
+    },
+    "acceleration": {
+      "max_acceleration": {
+        "max_x_acceleration": "machine_max_acceleration_x",
+        "max_y_acceleration": "machine_max_acceleration_y",
+        "max_z_acceleration": "machine_max_acceleration_z",
+        "max_e_acceleration": "machine_max_acceleration_e"
+      },
+      "infill_acceleration": "machine_max_acceleration_extruding",
+      "print_acceleration": "machine_max_acceleration_extruding",
+      "top_bottom_acceleration": "top_surface_acceleration",
+      "wall_acceleration": "outer_wall_acceleration",
+      "default_wall_acceleration": "outer_wall_acceleration",
+      "first_layer_acceleration": "initial_layer_acceleration"
+    },
+    "extruder": {
+      "extruder_jerk_speed": {
+        "x_jerk": "machine_max_jerk_x",
+        "y_jerk": "machine_max_jerk_y",
+        "z_jerk": "machine_max_jerk_z",
+        "e_jerk": "machine_max_jerk_e"
+      },
+      "travel_speed": "machine_min_travel_rate",
+      "z_hop_toggle": "z_hop",
+      "z_hop_speed": "z_hop",
+      "nozzle_size": "nozzle_diameter",
+      "nozzle_offset_y": "extruder_offset",
+      "nozzle_offset_x": "extruder_offset"
+    },
+    "infill": {
+      "allowed_height": "printable_height",
+      "min_extrude_rate": "machine_min_travel_rate",
+      "bridge_speed": "bridge_speed",
+      "bridge_flow": "bridge_flow",
+      "flow_ironing": "ironing_flow",
+      "ironing_speed": "ironing_speed",
+      "wall_print_speed": "outer_wall_speed",
+      "first_layer_infill_speed": "initial_layer_infill_speed",
+      "layer_height": "layer_height",
+      "default_first_layer_height": "initial_layer_print_height",
+      "first_layer_width": "initial_layer_line_width",
+      "first_layer_height": "initial_layer_print_height",
+      "infill_density": "filament_density",
+      "infill_pattern": "bottom_surface_pattern",
+      "gap_infill_speed": "gap_infill_speed",
+      "prime_tower_toggle": "enable_prime_tower",
+      "support_toggle": "enable_support",
+      "support_line_width": "support_line_width",
+      "bottom_top_thickness": "bottom_shell_thickness",
+      "top_bottom_surface_pattern": "bottom_surface_pattern",
+      "adaptive_height_toggle": "adaptive_layer_height",
+      "brim_width": "brim_width",
+      "infill_overlap": "infill_wall_overlap",
+      "inner_wall_speed": "inner_wall_speed",
+      "inner_wall_width": "inner_wall_line_width",
+      "infill_width": "line_width",
+      "draft_shield_toggle": "draft_shield"
+    },
+    "feedrate": {
+      "machine_max_feedrate": {
+        "max_x_feedrate": "machine_max_speed_x",
+        "max_y_feedrate": "machine_max_speed_y",
+        "max_z_feedrate": "machine_max_speed_z",
+        "max_e_feedrate": "machine_max_speed_e"
+      },
+      "retraction": {
+        "retraction_speed": "retraction_speed",
+        "min_retraction_travel": "retraction_minimum_travel",
+        "retraction_before_wipe": "retract_before_wipe",
+        "tool_change_retraction": "retract_length_toolchange",
+        "length_of_retraction": "retraction_length",
+        "extra_tool_change_retraction": "retract_restart_extra_toolchange",
+        "extra_wipe_retraction": "retract_restart_extra"
+      },
+      "fan": {
+        "plate_temp": "cool_plate_temp",
+        "angle_support": "overhang_fan_threshold",
+        "slow_while_cooling": "slow_down_for_layer_cooling",
+        "overhang_fan_speed": "overhang_fan_speed"
+      }
+    }
+  }
+}
