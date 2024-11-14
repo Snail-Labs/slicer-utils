@@ -1,0 +1,111 @@
+{
+    "ancestor": {
+      "print_technology_ancestor": "inherits",
+      "manufacturer_ancestor": "manufacturer"
+    },
+    "metadata": {
+      "file_fmt": "file_formats",
+      "name": "name",
+      "version": "version",
+      "machine_extrude_count": "machine_extrude_count",
+      "extruder_names": "extruder_names"
+    },
+    "override": {
+      "gcode": {
+        "flavor_gcode": "machine_gcode_flavor",
+        "start_param_gcode": "machine_start_gcode",
+        "end_param_gcode": "machine_end_gcode"
+      },
+      "acceleration": {
+        "toggle_acceleration": "acceleration_enabled",
+        "max_acceleration": {
+          "max_x_acceleration": null,
+          "max_y_acceleration": null,
+          "max_z_acceleration": null,
+          "max_e_acceleration": null
+        },
+        "infill_acceleration": "acceleration_infill",
+        "print_acceleration": "acceleration_print",
+        "top_bottom_acceleration": "acceleration_topbottom",
+        "wall_acceleration": "acceleration_wall",
+        "default_wall_acceleration": "acceleration_wall_0",
+        "first_layer_acceleration": "acceleration_layer_0"
+      },
+      "extruder": {
+        "extruder_jerk_speed": {
+          "x_jerk": "machine_max_jerk_xy",
+          "y_jerk": "machine_max_jerk_xy",
+          "z_jerk": "machine_max_jerk_z",
+          "e_jerk": "machine_max_jerk_e"
+        },
+        "travel_speed": "speed_travel",
+        "z_hop_toggle": "wipe_hop_enable",
+        "z_hop_speed": "speed_z_hop",
+        "wipe_hop_amount": "wipe_hop_amount",
+        "extruder_prime_pos_x": "extruder_prime_pos_x",
+        "extruder_prime_pos_y": "extruder_prime_pos_y",
+        "extruder_prime_pos_z": "extruder_prime_pos_z",
+        "machine_extruder_start_pos_x": "machine_extruder_start_pos_x",
+        "machine_extruder_start_pos_y": "machine_extruder_start_pos_y",
+        "machine_extruder_start_pos_z": "machine_extruder_start_pos_z",
+        "machine_extruder_end_pos_x": "machine_extruder_end_pos_x",
+        "machine_extruder_end_pos_y": "machine_extruder_end_pos_y",
+        "machine_extruder_end_pos_z": "machine_extruder_end_pos_z",
+        "nozzle_size": "machine_nozzle_size"
+      },
+      "infill": {
+        "allowed_height": "layer_height",
+        "min_extrude_rate": "machine_minimum_feedrate",
+        "bridge_speed": "bridge_wall_speed",
+        "bridge_flow": "bridge_wall_material_flow",
+        "flow_ironing": "ironing_flow",
+        "ironing_speed": "speed_ironing",
+        "wall_print_speed": "speed_wall",
+        "first_layer_infill_speed": "speed_layer_0",
+        "layer_height": "layer_height",
+        "default_first_layer_height": "layer_height_0",
+        "first_layer_width": "initial_layer_line_width_factor",
+        "first_layer_height": "layer_height_0",
+        "infill_density": "infill_sparse_density",
+        "wall_width": "wall_line_width",
+        "infill_pattern": "infill_pattern",
+        "gap_infill_speed": "speed_infill",
+        "prime_tower_toggle": "prime_tower_enable",
+        "support_toggle": "support_enable",
+        "support_line_width": "support_line_width",
+        "bottom_top_thickness": "top_bottom_thickness",
+        "top_bottom_surface_pattern": "top_bottom_pattern",
+        "adaptive_height_toggle": "adaptive_layer_height_enabled",
+        "brim_width": "skirt_brim_line_width",
+        "infill_overlap": "infill_overlap_mm",
+        "inner_wall_speed": "speed_wall",
+        "inner_wall_width": "wall_line_width",
+        "infill_width": "infill_line_width",
+        "draft_shield_toggle": "draft_shield_enabled"
+      },
+      "feedrate": {
+        "machine_max_feedrate": {
+          "max_x_feedrate": "machine_max_feedrate_x",
+          "max_y_feedrate": "machine_max_feedrate_y",
+          "max_z_feedrate": "machine_max_feedrate_z",
+          "max_e_feedrate": "machine_max_feedrate_e"
+        }
+      },
+      "retraction": {
+        "retraction_speed": "retraction_speed",
+        "min_retraction_travel": "retraction_min_travel",
+        "retraction_before_wipe": "retract_at_layer_change",
+        "tool_change_retraction": "switch_extruder_retraction_amount",
+        "length_of_retraction": "retraction_amount",
+        "extra_tool_change_retraction": "retraction_extra_prime_amount",
+        "extra_wipe_retraction": "wipe_retraction_extra_prime_amount"
+      },
+      "fan": {
+        "plate_temp": "material_bed_temperature",
+        "angle_support": "support_angle",
+        "slow_while_cooling": null,
+        "overhang_fan_speed": "cool_fan_speed"
+      }
+    }
+  }
+  
